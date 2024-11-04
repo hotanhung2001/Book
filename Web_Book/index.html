@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NoteBook</title>
+        <link rel="stylesheet" type="text/css" href="css/styleIndex.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/logo" href="image/logo/icon.PNG">
+        <script src="js/jquery-3.5.1.min.js"></script>
+    <head>
+    <script type="text/javascript">
+        $(function() {
+            $('.slide img:gt(0)').hide(); // ẩn tất cả trừ ảnh đầu
+            setInterval(function(){
+            $('.slide :first-child').fadeOut() //FadeOut là ảnh đang hiện
+            .next('img').fadeIn() //fadeIn ảnh tiếp theo
+            .end().appendTo('.slide'); // chuyển vị trí ảnh xuống cuối
+            }, 2500);
+        })
+    </script>
+    <body>
+        <div class="banner">
+            <img src="image/banner.png" width="100%" height="100px" >
+        </div>
+        <div id="fixnav">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html"><img src="image/logo/logo.PNG" height="100px"; width="100%"></a>
+                </div>
+                <form class="search">
+                    <input type="text" name="Tìm kiếm" placeholder="Tìm kiếm của bạn...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="info">
+                    <button type="submit"><i class="fa fa-bell"> </i><p>THÔNG BÁO</p></button>
+                    <button type="submit"><i class="fa fa-shopping-cart"> </i><p>GIỎ HÀNG</p></button>
+                    <a href="login.html"><button type="submit"><i class="fa fa-sign-in" > </i><p>ĐĂNG NHẬP  /  ĐĂNG KÝ</p></button></a>
+                </div>
+            </div>
+            <div class="menu">
+                <ul> 
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="noibat/sach_hay.html">SÁCH HAY TRONG TUẦN</a></li>
+                    <li><a href="noibat/ban_chay.html">SÁCH BÁN CHẠY</a></li>
+                    <li><a href="noibat/moi_ph.html">SÁCH MỚI PHÁT HÀNH</a></li>
+                    <li><a href="noibat/sap_ph.html">SÁCH SẮP PHÁT HÀNH</a></li>
+                    <li><a href="noibat/khuyenmai.html">KHUYẾN MÃI</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="top">
+                <div class="list">
+                    <ul><p>DANH MỤC SÁCH</p>
+                        <li><i class="fa fa-angle-right"></i><a href="home/kinh_te.html">Sách kinh tế</a>
+                            <ul class="tolist">
+                                <li><a href="home/sachkinhte/tai_chinh_ke_toan.html">Tài chính - Kế toán</a></li>
+                                <li><a href="home/sachkinhte/quan_tri_lanh_dao.html">Quản trị - Lãnh đạo</a></li>
+                                <li><a href="home/sachkinhte/maketing.html">Maketing - Bán hàng</a></li>
+                                <li><a href="home/sachkinhte/kinh_te_hoc.html">Kinh tế học</a></li>
+                                <li><a href="home/sachkinhte/khoi_nghiep.html">Khởi nghiệp</a></li>
+                                <li><a href="home/">Bài học kinh doanh</a></li>
+                            </ul>
+                        </li>                        
+                        <li><i class="fa fa-angle-right"></i><a href="#">Sách kỹ năng sống</a>
+                            <ul class="tolist">
+                                <li><a href="#">Kỹ năng sống</a></li>
+                                <li><a href="#">Nghệ thuật sống đẹp</a></li>
+                                <li><a href="#">Kỹ năng làm việc</a></li>
+                            </ul>
+                        </li>                        
+                        <li><i class="fa fa-angle-right"></i><a href="#">Sách tuổi teen</a>
+                            <ul class="tolist">
+                                <li><a href="#">Truyện tranh Manga</a></li>
+                                <li><a href="#">Comic</a></li>
+                                <li><a href="#">Light Novel</a></li>
+                                <li><a href="#">Hướng nghiệp - kỹ năng</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">Sách thiếu nhi</a>
+                            <ul class="tolist">
+                                <li><a href="#">Truyện cổ tích thần thoại</a></li>
+                                <li><a href="#">Vừa học vừa chơi</a></li>
+                                <li><a href="#">Kể chuyện cho bé</a></li>
+                                <li><a href="#">Kiến thức - Kỹ năng</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">Văn học nước ngoài</a>
+                            <ul class="tolist">
+                                <li><a href="#">Truyện ngắn - Tản văn</a></li>
+                                <li><a href="#">Tiểu sử - Hồi ký</a></li>
+                                <li><a href="#">Tác phẩm kinh điển</a></li>
+                                <li><a href="#">Truyện trinh thám - Kinh dị</a></li>
+                                <li><a href="#">Tiểu thuyết tình cảm - Lãng mạn</a></li>
+                                <li><a href="#">Truyện lịch sử - Kiếm hiệp</a></li>
+                                <li><a href="#">Huyền bí - Giả tưởng</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">Văn học trong nước</a>
+                            <ul class="tolist">
+                                <li><a href="#">Tiểu thuyết</a></li>
+                                <li><a href="#">Truyện ngắn - Tản văn</a></li>
+                                <li><a href="#">Tiểu sử - Hồi ký</a></li>
+                                <li><a href="#">Truyện trinh thám - Kinh dị</a></li>
+                                <li><a href="#">Phóng sự - Ký sự</a></li>
+                                <li><a href="#">Huyền bí - Giả tưởng</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">Sách học Ngoại Ngữ</a>
+                            <ul class="tolist">
+                                <li><a href="#">Sách học tiếng Anh</a></li>
+                                <li><a href="#">Sách học tiếng Hoa</a></li>
+                                <li><a href="#">Sách học tiếng Nhật</a></li>
+                                <li><a href="#">Sách học tiếng Hàn</a></li>
+                                <li><a href="#">Sách học tiếng Pháp</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">Đời sống</a>
+                            <ul class="tolist">
+                                <li><a href="#">Văn hóa - Du lịch</a></li>
+                                <li><a href="#">Chăm sóc sức khỏe</a></li>
+                                <li><a href="#">Phong thủy - Nhà cửa</a></li>
+                                <li><a href="#">Thể thao - Giải trí</a></li>
+                                <li><a href="#">Nấu ăn</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">Sách chuyên ngành</a>
+                            <ul class="tolist">
+                                <li><a href="#">Giáo dục</a></li>
+                                <li><a href="#">Công nghệ thông tin</a></li>
+                                <li><a href="#">Lịch sử - Địa lý</a></li>
+                                <li><a href="#">Kiến trúc - Mỹ thuật</a></li>
+                                <li><a href="#">Chính trị - Triết học</a></li>
+                                <li><a href="#">Doanh nhân - Người nổi tiếng</a></li>
+                                <li><a href="#">Tâm linh - Tôn giáo</a></li>
+                                <li><a href="#">Y Dược</a></li>
+                                <li><a href="#">Khoa học xã hội</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">Văn phòng phẩm - Quà tặng</a>
+                            <ul class="tolist">
+                                <li><a href="#">Dụng cụ học tập</a></li>
+                                <li><a href="#">Phụ kiện - Quà tặng</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="image/poster/1.jpg" width="880px" height="320px">
+                        <img src="image/poster/2.jpg" width="880px" height="320px">
+                        <img src="image/poster/3.jpg" width="880px" height="320px">
+                        <img src="image/poster/4.jpg" width="880px" height="320px">
+                        <img src="image/poster/5.jpg" width="880px" height="320px">
+                    </div>
+                    <div class="image">
+                        <img src="image/poster/1.jpg" width="880px" height="320px">
+                        <img src="image/poster/2.jpg" width="880px" height="320px">
+                        <img src="image/poster/3.jpg" width="880px" height="320px">
+                        <img src="image/poster/4.jpg" width="880px" height="320px">
+                        <img src="image/poster/5.jpg" width="880px" height="320px">
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="group-book">
+                    <div class="group-header">
+                        <div class="nav">
+                            <div class="name">
+                                <a href="#">SÁCH HAY TRONG TUẦN</a>
+                            </div>
+                            <div class="more">
+                                <a href="#">Xem thêm <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="product">
+                            <div class="item"> 
+                                <a href="noi_dung.html"><img src="image/Groupbook/1.1.jpg" width="138px" height="200px"></a>
+                                <a href="noi_dung.html"><p>Osho Đàn Ông - The Book Of Men</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>83.100đ</strong> <strike>119.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/123.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Big Book Of The Body – Cuốn Sách Khổng Lồ Về Cơ Thể Người</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>104.900đ</strong> <strike>150.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/4.1.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Lỗ Đen: Các Bài Diễn Thuyết Trên Đài</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                </div>
+                                <p><strong>26.800đ</strong> <strike>35.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/Jane Eyre.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Jane Eyre (Huy Hoàng)</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>94.900đ</strong> <strike>135.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/saas.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Dưới Gầm Trời Lưu Lạc (Bút Ký - Phóng Sự)</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>113.400đ</strong> <strike>126.000đ</strike></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-book">
+                    <div class="group-header">
+                        <div class="nav">
+                            <div class="name">
+                                <a href="#">SÁCH BÁN CHẠY</a>
+                            </div>
+                            <div class="more">
+                                <a href="#">Xem thêm <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="product">
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/co-hai-con-meo-ngoi-ben-cua-so-bia-mem_12976_11117.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Có Hai Con Mèo Ngồi Bên Cửa Sổ</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>51.000đ</strong> <strike>85.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/5-centimet-tren-giay_32139_1.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>5 Centimet Trên Giây</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>30.000đ</strong> <strike>50.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/ddsd.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Em Là Nhà</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                </div>
+                                <p><strong>67.800đ</strong> <strike>98.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/toi-dam-thach-thuc-voi-thoi-gian.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Tôi Dám Thách Thức Với Thời Gian</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                </div>
+                                <p><strong>101.300đ</strong> <strike>145.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/dsdetfv.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Việc Làng (Phóng Sự)</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                </div>
+                                <p><strong>31.000đ</strong> <strike>33.000đ</strike></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-book">
+                    <div class="group-header">
+                        <div class="nav">
+                            <div class="name">
+                                <a href="#">SÁCH MỚI PHÁT HÀNH</a>
+                            </div>
+                            <div class="more">
+                                <a href="#">Xem thêm <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="product">
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/fhfdc.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Mỹ Thuật Căn Bản Và Nâng Cao - Cẩm Nang Hướng Dẫn Thi Vẽ Các Trường Mỹ Thuật Và Kiến Trúc</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>22.900đ</strong> <strike>29.500đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/hay-de-toi-o-ben-ban.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Hãy Để Tôi Ở Bên Bạn</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>115.000đ</strong> <strike></strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/qylb,.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Nhà Lãnh Đạo Không Chức Danh</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>48.000đ</strong> <strike>80.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/mat-troi-luc-nnua-dem.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Mặt Trời Lúc Nửa Đêm</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>188.900đ</strong> <strike>280.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/jnk.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>100 Từ Pháp - Việt đầu tiên</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>41.650đ</strong> <strike>49.000đ</strike></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-book">
+                    <div class="group-header">
+                        <div class="nav">
+                            <div class="name">
+                                <a href="#">SÁCH SẮP PHÁT HÀNH</a>
+                            </div>
+                            <div class="more">
+                                <a href="#">Xem thêm <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="product">
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/qwe.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Overlord Tập 2 (Phiên Bản Manga)</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>28.000đ</strong> <strike>35.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/qwqdzd.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Chinh Phục Cụm Động Từ Tiếng Anh</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>51.900đ</strong> <strike>65.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/5.1.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Cải Cách Giáo Dục Việt Nam - " Liệu Có Thực Hiện Được Lấy Học Sinh Làm Trung Tâm?" (Tái bản 2020)</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>112.500đ</strong> <strike>125.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/yhuij.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Thị Trường Tài Chính</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>65.600đ</strong> <strike>82.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/yujh.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Môn Đồ - Sư Phụ Thật Khó Chiều (Tặng Kèm 1 Postcard)</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><strong>76.700đ</strong> <strike>96.000đ</strike></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-book">
+                    <div class="group-header">
+                        <div class="nav">
+                            <div class="name">
+                                <a href="#">DEAL HOT</a>
+                            </div>
+                            <div class="more">
+                                <a href="#">Xem thêm <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="product">
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/tu-duy-phan-bien_91128_1.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Tư Duy Phản Biện</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><i>-48%</i></p>
+                                <p><strong>43.900đ</strong> <strike>85.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/vfhbn.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Từ Tốt Đến Vĩ Đại</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><i>-40%</i></p>
+                                <p><strong>69.000đ</strong> <strike>115.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/kjkl.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Trọn Bộ 6 Tập: Tru Tiên (Tái Bản)</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><i>-45%</i></p>
+                                <p><strong>429.000đ</strong> <strike>780.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/2.1.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Các Thế Giới Song Song (Tái Bản 2018)</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><i>-40%</i></p>
+                                <p><strong>76.800đ</strong> <strike>128.000đ</strike></p>
+                            </div>
+                            <div class="item"> 
+                                <a href="#"><img src="image/Groupbook/5egh.jpg" width="138px" height="200px"></a>
+                                <a href="#"><p>Rich Habits - Poor Habits: Sự khác biệt giữa người giàu và người nghèo</p></a>
+                                <div class="rating">
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px_1.png" >
+                                    <img src="image/icon/icons8_star_30px.png" >
+                                </div>
+                                <p><i>-50%</i></p>
+                                <p><strong>80.000đ</strong> <strike>160.000đ</strike></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="footer">
+            <div class="about">
+                <strong>VỀ CHÚNG TÔI</strong>
+                <ul>
+                    <li>Giới thiệu NoteBook</li>
+                    <li>Thông tin tuyển dụng</li>
+                    <li>Phương thức thanh toán</li>
+                    <li>Phương thức vận chuyển</li>
+                </ul>
+            </div>
+            <div class="rule">
+                <strong>QUY ĐỊNH & ĐIỀU KHOẢN</strong>
+                <ul>
+                    <li>Quy định thành viên</li>
+                    <li>Điều khoản</li>
+                    <li>Chính sách bảo vệ khách hàng</li>
+                    <li>Chính sách bảo hành</li>
+                    <li>Chính sách đổi trả</li>
+                </ul>
+            </div>
+            <div class="care">
+                <strong>THÔNG TIN LIÊN HỆ</strong>
+                <ul>
+                    <li><img src="image/icon/icons8_phone_24px.png"><p><b> Hotline:</b> 1900 2504</p></li>
+                    <li><img src="image/icon/icons8_important_mail_24px.png"><p><b> Email:</b> takecare@gmail.com</p></li>
+                    <li><img src="image/icon/icons8_retro_alarm_clock_24px.png"><p><b> Time:</b> 8:00 - 23:00</p></li>
+                    <li><img src="image/icon/icons8_address_24px.png"><p><b> Add:</b> 828 Sư Vạn Hạnh, phường 13, quận 10, TP.HCM</p></li>
+                </ul>
+            </div>
+            <div class="social">
+                <strong>KẾT NỐI</strong>
+                <ul>
+                    <li><img src="image/icon/icons8_facebook_48px.png"><strong> Facebook</strong></li>
+                    <li><img src="image/icon/icons8_instagram_48px.png"><strong> Instagram</strong></li>
+                    <li><img src="image/icon/icons8_play_button_48px_1.png"><strong> Youtube</strong></li>
+                    <li><img src="image/icon/icons8_twitter_48px_1.png"><strong> Twitter</strong></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
